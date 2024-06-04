@@ -1,25 +1,11 @@
-import { register } from "@/lib/action";
 import styles from "./register.module.css";
+import RegisterForm from "@/components/registerForm/registerForm";
 
 const RegisterPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.warpper}>
-                <form className={styles.form} action={register}>
-                    <input type="text" placeholder="username" name="username" />
-                    <input type="text" placeholder="email" name="email" />
-                    <input
-                        type="password"
-                        placeholder="password"
-                        name="password"
-                    />
-                    <input
-                        type="password"
-                        placeholder="password again"
-                        name="passwordRepeat"
-                    />
-                    <button>Register</button>
-                </form>
+                <RegisterForm />
             </div>
         </div>
     );
